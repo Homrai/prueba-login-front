@@ -8,9 +8,11 @@ export const initialUser:userLog={
 }
 export interface Message{
     ok:boolean,
-    msj:string
+    msj:string,
+    color:string
 }
 export const initialMsj:Message={
     ok:false,
-    msj:""
+    msj:"",
+    color:"red"
 }
