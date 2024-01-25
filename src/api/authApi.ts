@@ -6,6 +6,7 @@ const header = {
       'Content-Type': 'application/json',
       Accept: 'application/json',
     },
+    mode: 'cors', // no-cors, *cors, same-origin
   };
 export const loginService= async (data:userLog)=>{
   try {
