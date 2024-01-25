@@ -2,10 +2,11 @@ import axios from "axios";
 import { userLog } from "../types/login";
 const url = "https://prueba-login-server.vercel.app";
 const header = {
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
+  headers: {
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Credentials': "true",
     },
+    credentials: "include",
     mode: 'cors', // no-cors, *cors, same-origin
   };
 export const loginService= async (data:userLog)=>{
