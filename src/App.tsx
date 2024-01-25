@@ -19,7 +19,7 @@ function App() {
                     <Dashboard />
               </Auth>}>
         </Route>
-        <Route path='/*' element={<ErrorRoute/>} />
+        <Route path='*' element={<ErrorRoute/>} />
       </Routes>
     </BrowserRouter>
   )
